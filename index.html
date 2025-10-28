@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mary Jose Camino: Tu Amiga IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<style>
+    /* Custom styles for the range sliders */
+    .mic-slider, .personality-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    /* Track */
+    .mic-slider::-webkit-slider-runnable-track,
+    .personality-slider::-webkit-slider-runnable-track {
+      background: #4B5563; /* bg-gray-600 */
+      height: 0.5rem;
+      border-radius: 0.5rem;
+    }
+    .mic-slider::-moz-range-track,
+    .personality-slider::-moz-range-track {
+      background: #4B5563; /* bg-gray-600 */
+      height: 0.5rem;
+      border-radius: 0.5rem;
+    }
+
+    /* Thumb - Microphone */
+    .mic-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      margin-top: -4px; /* Vertically center thumb */
+      background-color: #9333EA; /* bg-purple-600 */
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 9999px;
+    }
+    .mic-slider::-moz-range-thumb {
+      border: none;
+      background-color: #9333EA; /* bg-purple-600 */
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 9999px;
+    }
+
+    /* Thumb - Personality */
+    .personality-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      margin-top: -4px; /* Vertically center thumb */
+      background-color: #EC4899; /* bg-pink-500 */
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 9999px;
+    }
+    .personality-slider::-moz-range-thumb {
+      border: none;
+      background-color: #EC4899; /* bg-pink-500 */
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 9999px;
+    }
+
+    /* Focus states for accessibility */
+    .mic-slider:focus, .personality-slider:focus {
+        outline: none;
+    }
+    .mic-slider:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.5); /* ring-4 ring-purple-400 ring-opacity-50 */
+    }
+    .mic-slider:focus::-moz-range-thumb {
+       box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.5); /* ring-4 ring-purple-400 ring-opacity-50 */
+    }
+    .personality-slider:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.5); /* ring-4 ring-pink-400 ring-opacity-50 */
+    }
+    .personality-slider:focus::-moz-range-thumb {
+      box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.5); /* ring-4 ring-pink-400 ring-opacity-50 */
+    }
+</style>
+</head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Copy of Mary Jose Camino: Tu Amiga IA",
+  "description": "Una amiga IA conversacional en tiempo real que puede ver tu mundo y hablar contigo. Construida con Gemini, Mary Jose Camino está diseñada para ser empática, humorística y solidaria.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
